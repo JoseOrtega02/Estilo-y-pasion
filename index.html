@@ -20,8 +20,276 @@
       href="https://fonts.googleapis.com/css2?family=Laila:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./index.css" />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline font-heading">Hello world!</h1>
+  <body class="bg-background">
+    <!--  nav -->
+    <nav
+      class="w-full bg-secondary text-text flex flex-row flex-wrap content-center justify-between align-center h-16 pr-4"
+    >
+      <div class="w-44 h-fit align-center logo">
+        <img src="./img/Estilo y Pasión-logos_white.png" alt="" class="" />
+      </div>
+      <button>
+        <img
+          src="./img/iconos/298879_bars_three_icon.svg"
+          alt=""
+          class="fill-primary w-8 h-8"
+        />
+      </button>
+    </nav>
+    <h1 class="text-4xl text-primary font-heading text-center pt-4">
+      Te damos la bienvenida!
+    </h1>
+    <!-- hero -->
+    <div
+      class="bg-hero h-96 w-72 bg-center bg-no-repeat bg-cover mt-4 mx-auto align-bottom flex flex-col content-center justify-end"
+    >
+      <div class="w-full px-4 mx-auto text-text font-body bg-[#262523]/80">
+        <p class="text-lg">
+          “Descubre la perfección en cada peinado: tu refugio en el mundo de la
+          belleza.”
+        </p>
+      </div>
+    </div>
+    <!-- Cortes section -->
+    <section
+      class="bg-secondary w-72 pb-4 mt-20 mx-auto align-bottom flex flex-col content-center justify-end"
+    >
+      <h2 class="text-text text-4xl font-heading text-center my-4">
+        Cortes de temporada
+      </h2>
+      <div
+        class="w-full px-4 flex flex-col content-center justify-between gap-4"
+      >
+        <img
+          src="./img/cortes/new_hair_style_soft_focus_dept.jpeg"
+          alt=""
+          class="w-full"
+        />
+        <img
+          src="./img/cortes/new_hair_style_sharp_focus_dep.jpeg"
+          alt=""
+          class="w-full"
+        />
+        <img
+          src="./img/cortes/new_hair_style_men_sharp_focus.jpeg"
+          alt=""
+          class="w-full"
+        />
+        <img
+          src="./img/cortes/new_hair_style_men_sharp_focus (1).jpeg"
+          alt=""
+          class="w-full"
+        />
+      </div>
+      <a href="#" class="text-primary text-end font-body mr-4 mt-4 underline"
+        >Ver mas -></a
+      >
+    </section>
+    <!-- Productos section -->
+    <section
+      class="bg-secondary w-72 mt-20 mx-auto align-bottom flex flex-col content-center justify-end pb-4"
+    >
+      <h2 class="text-text text-4xl font-heading text-center my-4">
+        Nuestros productos
+      </h2>
+      <div
+        class="w-full px-4 flex flex-col content-center justify-between gap-4"
+      >
+        <img
+          src="./img/cortes/hair_product_shampoo_object_sh.jpeg"
+          alt=""
+          class="w-full"
+        />
+        <img
+          src="./img/cortes/hair_product_shampoo_object_sh.webp"
+          alt=""
+          class="w-full"
+        />
+        <img
+          src="./img/cortes/hair_product_shampoo_object_so (1).jpeg"
+          alt=""
+          class="w-full"
+        />
+        <img
+          src="./img/cortes/hair_product_shampoo_object_so.jpeg"
+          alt=""
+          class="w-full"
+        />
+      </div>
+      <a href="#" class="text-primary text-end font-body mr-4 mt-4 underline"
+        >Ver mas -></a
+      >
+    </section>
+    <!-- Servicios section -->
+    <section
+      class="w-72 mt-20 mx-auto align-bottom flex flex-col content-center justify-end pb-4"
+    >
+      <h2 class="text-text text-4xl font-heading text-center my-4">
+        Ofrecemos servicios
+      </h2>
+      <div class="w-full flex flex-col content-center justify-between gap-y-4">
+        <div
+          class="w-11/12 p-4 bg-secondary mx-auto text-text font-body flex flex-col content-center text-center justify-between gap-4"
+        >
+          <h3 class="text-3xl">Tintado de cabello</h3>
+          <h4 class="text-2xl mb-4">$200</h4>
+          <div class="flex flex-col gap-2 items-center justify-center mb-4">
+            <div class="flex gap-2 items-center justify-center">
+              <img
+                src="./img/iconos/326572_check_icon.svg"
+                class="fill-primary w-8 h-8"
+                alt=""
+              />
+              <h5>Tintado de cabello</h5>
+            </div>
+            <div class="flex gap-2 items-center justify-center">
+              <img
+                alt=""
+                src="./img/iconos/326572_check_icon.svg"
+                class="fill-primary w-8 h-8"
+              />
+              <h5>Tintado de cabello</h5>
+            </div>
+            <div class="flex gap-2 items-center justify-center">
+              <img
+                alt=""
+                src="./img/iconos/326572_check_icon.svg"
+                class="fill-primary w-8 h-8"
+              />
+              <h5>Tintado de cabello</h5>
+            </div>
+          </div>
+          <div class="flex flex-row gap-4 justify-center">
+            <button class="bg-background text-text px-4 py-2">Turnos</button>
+            <button class="bg-primary text-background px-4 py-2">
+              Conoce Mas
+            </button>
+          </div>
+        </div>
+        <div
+          class="w-11/12 p-4 bg-accent mx-auto text-text font-body flex flex-col content-center text-center justify-between gap-4"
+        >
+          <p class="text-text">-Mas solicitado-</p>
+          <h3 class="text-3xl text-secondary">Tintado de cabello</h3>
+          <h4 class="text-2xl mb-10 text-secondary">$200</h4>
+          <div class="flex flex-col gap-2 items-center justify-center mb-10">
+            <div class="flex gap-2 items-center justify-center">
+              <img
+                src="./img/iconos/326572_check_icon.svg"
+                class="fill-primary w-8 h-8"
+                alt=""
+              />
+              <h5 class="text-secondary">Tintado de cabello</h5>
+            </div>
+            <div class="flex gap-2 items-center justify-center">
+              <img
+                alt=""
+                src="./img/iconos/326572_check_icon.svg"
+                class="fill-primary w-8 h-8"
+              />
+              <h5 class="text-secondary">Tintado de cabello</h5>
+            </div>
+            <div class="flex gap-2 items-center justify-center">
+              <img
+                alt=""
+                src="./img/iconos/326572_check_icon.svg"
+                class="fill-primary w-8 h-8"
+              />
+              <h5 class="text-secondary">Tintado de cabello</h5>
+            </div>
+          </div>
+          <div class="flex flex-row gap-4 justify-center">
+            <button class="bg-background text-text px-4 py-2">Turnos</button>
+            <button class="bg-primary text-background px-4 py-2">
+              Conoce Mas
+            </button>
+          </div>
+        </div>
+        <div
+          class="w-11/12 p-4 bg-secondary mx-auto text-text font-body flex flex-col content-center text-center justify-between gap-4"
+        >
+          <h3 class="text-3xl">Tintado de cabello</h3>
+          <h4 class="text-2xl mb-4">$200</h4>
+          <div class="flex flex-col gap-2 items-center justify-center mb-4">
+            <div class="flex gap-2 items-center justify-center">
+              <img
+                src="./img/iconos/326572_check_icon.svg"
+                class="fill-primary w-8 h-8"
+                alt=""
+              />
+              <h5>Tintado de cabello</h5>
+            </div>
+            <div class="flex gap-2 items-center justify-center">
+              <img
+                alt=""
+                src="./img/iconos/326572_check_icon.svg"
+                class="fill-primary w-8 h-8"
+              />
+              <h5>Tintado de cabello</h5>
+            </div>
+            <div class="flex gap-2 items-center justify-center">
+              <img
+                alt=""
+                src="./img/iconos/326572_check_icon.svg"
+                class="fill-primary w-8 h-8"
+              />
+              <h5>Tintado de cabello</h5>
+            </div>
+          </div>
+          <div class="flex flex-row gap-4 justify-center">
+            <button class="bg-background text-text px-4 py-2">Turnos</button>
+            <button class="bg-primary text-background px-4 py-2">
+              Conoce Mas
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer
+      class="w-full mt-10 bg-secondary text-text flex flex-col flex-wrap content-center justify-between align-center"
+    >
+      <!-- contactame -->
+      <div class="w-10/12">
+        <h3 class="text-3xl text-text font-heading text-center my-4">
+          Contactanos!
+        </h3>
+        <div class="flex flex-col gap-4 mb-4">
+          <input
+            type="text"
+            placeholder="yourmail@gmail.com"
+            name=""
+            id=""
+            class="bg-inputs px-4 py-2"
+          />
+          <textarea
+            id=""
+            name=""
+            placeholder="your message..."
+            rows="4"
+            cols="20"
+            class="bg-inputs px-4 py-2 resize-none"
+          ></textarea>
+        </div>
+        <div class="w-full flex flex-row content-end">
+          <button class="bg-primary text-background ml-auto px-4 py-2">
+            Enviar
+          </button>
+        </div>
+      </div>
+      <img src="./img/Estilo y Pasión-logos_white.png" alt="" class="w-10/12" />
+      <!-- links -->
+      <div
+        class="w-10/12 gap-6 mb-10 flex flex-row flex-wrap content-center justify-around align-center"
+      >
+        <a href="./index.html" class="text-primary underline">Home</a>
+        <a href="./servicios.html" class="text-primary underline">Servicios</a>
+        <a href="./nosotros.html" class="text-primary underline">Nosotros</a>
+        <a href="./turnos.html" class="text-primary underline">Turnos</a>
+        <a href="./contacto.html" class="text-primary underline">Tienda</a>
+      </div>
+    </footer>
   </body>
 </html>
