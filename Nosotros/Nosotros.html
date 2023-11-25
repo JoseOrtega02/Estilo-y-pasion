@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../tailwind.config.js"></script>
+    <!-- font Dancing Script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font Laila  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Laila:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-background">
+    <!--  nav -->
+    <nav
+      class="w-full z-10 bg-secondary sticky top-0 text-text flex flex-row flex-wrap content-center justify-between align-center h-16 pr-4"
+    >
+      <div class="w-44 h-fit align-center logo">
+        <img src="../img/Estilo y Pasión-logos_white.png" alt="" class="" />
+      </div>
+      <button class="btn md:hidden">
+        <img
+          src="../img/iconos/298879_bars_three_icon.svg"
+          alt=""
+          class="fill-primary w-8 h-8"
+        />
+      </button>
+    </nav>
+
+    <nav
+      class="mobile-menu z-10 hidden text-text md:hidden flex flex-col content-center justify-between align-center fixed top-18 left-0 w-full h-[90vh] bg-secondary py-10"
+    >
+      <ul
+        class="flex flex-col flex-wrap text-center font-body justify-between w-full h-full"
+      >
+        <li class="flex gap-2 items-center justify-center">
+          <img
+            src="../img/iconos/326656_home_icon.svg"
+            class="fill-primary w-8 h-8"
+            alt=""
+          /><a href="#" class="w-[70px]">Home</a>
+        </li>
+        <li class="flex gap-2 items-center justify-center">
+          <img
+            src="../img/iconos/3669368_content_cut_ic_icon (1).svg"
+            alt=""
+            class="fill-primary w-8 h-8"
+          />
+          <a href="#" class="w-[70px]">Cortes</a>
+        </li>
+        <li class="flex gap-2 items-center justify-center">
+          <img
+            src="../img/iconos/1737376_dollar_money_sign_icon.svg"
+            alt=""
+            class="fill-primary w-8 h-8"
+          />
+          <a href="#" class="w-[70px]">Precios</a>
+        </li>
+        <li class="flex gap-2 items-center justify-center">
+          <img
+            src="../img/iconos/2205215_bag_paper_shopping_store_icon.svg"
+            alt=""
+            class="fill-primary w-8 h-8"
+          />
+          <a href="#" class="w-[70px]">Tienda</a>
+        </li>
+        <li class="flex gap-2 items-center justify-center">
+          <img
+            src="../img/iconos/309041_users_group_people_icon.svg"
+            alt=""
+            class="fill-primary w-8 h-8"
+          />
+          <a href="#" class="w-[70px] text-primary">Nosotros</a>
+        </li>
+        <li class="flex gap-2 items-center justify-center">
+          <img
+            src="../img/iconos/8664792_calendar_check_schedule_icon.svg"
+            alt=""
+            class="fill-primary w-8 h-8"
+          />
+          <a href="#" class="w-[70px]">Turnos</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1 class="text-4xl text-primary font-heading text-center pt-4">
+      Nuestra historia
+    </h1>
+    <!-- historia-->
+    <img
+      src="../img/cortes/beginning_barbershop_entrepren.jpeg"
+      class="w-56 mt-10 mx-auto"
+      alt=""
+    />
+    <h4 class="text-center text-text font-body w-[80%] mt-10 mx-auto">
+      En un antiguo barrio, una barbería humilde abrió sus puertas décadas
+      atrás. Con el tiempo, la demanda por servicios más variados creció,
+      desafiando su especialización inicial en cortes de cabello masculinos.
+    </h4>
+    <h4 class="text-center text-text font-body w-[80%] mt-6 mx-auto">
+      Este cambio generó tensiones internas. Algunos barberos resistían la
+      transición hacia un salón de belleza por temor a perder la esencia
+      original del oficio.
+    </h4>
+    <img
+      src="../img/cortes/google_maps_ubication_of_a_bus.jpeg"
+      class="w-56 mt-10 mx-auto"
+      alt=""
+    />
+    <h4 class="text-center text-text font-body w-[80%] mt-6 mx-auto">
+      Tras debates y acuerdos, la barbería evolucionó hacia un dinámico salón de
+      belleza. La fusión entre cortes clásicos y tratamientos modernos
+      fortaleció al equipo y atrajo a una clientela diversa. La historia se
+      transformó en una unión entre tradición e innovación.
+    </h4>
+    <h2 class="text-center text-text font-heading text-3xl mt-10">
+      Puedes encontrarnos en:
+    </h2>
+    <img
+      src="../img/cortes/Captura.PNG"
+      class="w-full max-w-[500px] mt-10 mx-auto"
+      alt=""
+    />
+    <footer
+      class="w-full mt-10 bg-secondary text-text flex flex-col flex-wrap gap-y-6 content-center justify-between align-center"
+    >
+      <!-- contactame -->
+      <div class="w-10/12">
+        <h3 class="text-3xl text-text font-heading text-center my-4">
+          Contactanos!
+        </h3>
+        <div class="flex flex-col gap-4 mb-4">
+          <input
+            type="text"
+            placeholder="yourmail@gmail.com"
+            name=""
+            id=""
+            class="bg-inputs px-4 py-2"
+          />
+          <textarea
+            id=""
+            name=""
+            placeholder="your message..."
+            rows="4"
+            cols="20"
+            class="bg-inputs px-4 py-2 resize-none"
+          ></textarea>
+        </div>
+        <div class="w-full flex flex-row content-end">
+          <button class="bg-primary text-background ml-auto px-4 py-2">
+            Enviar
+          </button>
+        </div>
+      </div>
+      <img
+        src="../img/Estilo y Pasión-logos_white.png"
+        alt=""
+        class="w-10/12 max-w-xs mx-auto"
+      />
+      <!-- links -->
+      <div
+        class="w-10/12 gap-6 mb-10 flex flex-row flex-wrap content-center justify-around align-center"
+      >
+        <a href="./index.html" class="text-primary underline">Home</a>
+        <a href="./servicios.html" class="text-primary underline">Servicios</a>
+        <a href="./nosotros.html" class="text-primary underline">Nosotros</a>
+        <a href="./turnos.html" class="text-primary underline">Turnos</a>
+        <a href="./contacto.html" class="text-primary underline">Tienda</a>
+      </div>
+    </footer>
+    <script src="./navbar-btn.js"></script>
+  </body>
+</html>
