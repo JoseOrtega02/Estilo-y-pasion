@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../tailwind.config.js"></script>
+    <!-- font Dancing Script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font Laila  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Laila:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-background">
+    <!--  nav -->
+    <nav
+      class="w-full z-10 bg-secondary sticky top-0 text-text flex flex-row flex-wrap content-center justify-between align-center h-16 pr-4"
+    >
+      <div class="w-44 h-fit align-center logo">
+        <img src="../img/Estilo y Pasión-logos_white.png" alt="" class="" />
+      </div>
+      <button class="btn md:hidden">
+        <img
+          src="../img/iconos/298879_bars_three_icon.svg"
+          alt=""
+          class="fill-primary w-8 h-8"
+        />
+      </button>
+    </nav>
+
+    <nav
+      class="mobile-menu z-10 hidden text-text md:hidden flex flex-col content-center justify-between align-center fixed top-18 left-0 w-full h-[90vh] bg-secondary py-10"
+    >
+      <ul
+        class="flex flex-col flex-wrap text-center font-body justify-between w-full h-full"
+      >
+        <li class="flex gap-2 items-center justify-center">
+          <img
+            src="../img/iconos/326656_home_icon.svg"
+            class="fill-primary w-8 h-8"
+            alt=""
+          /><a href="#" class="w-[70px]">Home</a>
+        </li>
+        <li class="flex gap-2 items-center justify-center">
+          <img
+            src="../img/iconos/3669368_content_cut_ic_icon (1).svg"
+            alt=""
+            class="fill-primary w-8 h-8"
+          />
+          <a href="#" class="w-[70px]">Cortes</a>
+        </li>
+        <li class="flex gap-2 items-center justify-center">
+          <img
+            src="../img/iconos/1737376_dollar_money_sign_icon.svg"
+            alt=""
+            class="fill-primary w-8 h-8"
+          />
+          <a href="#" class="w-[70px] text-primary">Precios</a>
+        </li>
+        <li class="flex gap-2 items-center justify-center">
+          <img
+            src="../img/iconos/2205215_bag_paper_shopping_store_icon.svg"
+            alt=""
+            class="fill-primary w-8 h-8"
+          />
+          <a href="#" class="w-[70px]">Tienda</a>
+        </li>
+        <li class="flex gap-2 items-center justify-center">
+          <img
+            src="../img/iconos/309041_users_group_people_icon.svg"
+            alt=""
+            class="fill-primary w-8 h-8"
+          />
+          <a href="#" class="w-[70px]">Nosotros</a>
+        </li>
+        <li class="flex gap-2 items-center justify-center">
+          <img
+            src="../img/iconos/8664792_calendar_check_schedule_icon.svg"
+            alt=""
+            class="fill-primary w-8 h-8"
+          />
+          <a href="#" class="w-[70px]">Turnos</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1 class="text-4xl text-primary font-heading text-center pt-4">
+      Ofrecemos variedad de servicios
+    </h1>
+    <style>
+      .accordion {
+        width: 100%;
+      }
+
+      .panel {
+        display: none;
+        overflow: hidden;
+      }
+    </style>
+    <!-- servicios -->
+    <div class="flex max-w-sm w-full mt-10 mx-auto text-text font-body">
+      <div class="mx-auto bg my-2 w-11/12 gap-4 flex flex-col p-4">
+        <div class="bg-secondary p-4">
+          <div class="accordion flex flex-row items-center justify-between">
+            <h3>Corte de pelo</h3>
+            <h3>50<span class="text-primary">$</span></h3>
+            <button class="font-black">
+              <img
+                src="../img/iconos/211614_down_b_arrow_icon.svg"
+                class="fill-primary w-8 h-8"
+                alt=""
+              />
+            </button>
+          </div>
+
+          <div class="panel p-4">
+            <p>
+              Un servicio básico para mantener tu estilo. Incluye consulta sobre
+              el estilo y preferencias del cliente, seguido del corte y el
+              peinado final.
+            </p>
+          </div>
+        </div>
+        <div class="bg-secondary p-4">
+          <div class="accordion flex flex-row items-center justify-between">
+            <h3>Coloración</h3>
+            <h3>200<span class="text-primary">$</span></h3>
+            <button class="font-black">
+              <img
+                src="../img/iconos/211614_down_b_arrow_icon.svg"
+                class="fill-primary w-8 h-8"
+                alt=""
+              />
+            </button>
+          </div>
+
+          <div class="panel p-4">
+            <p>
+              Cambia o realza tu color de cabello. Puede incluir desde tintes
+              completos hasta reflejos o mechas.
+            </p>
+          </div>
+        </div>
+        <div class="bg-secondary p-4">
+          <div class="accordion flex flex-row items-center justify-between">
+            <h3 class="max-w-[80px]">Tratamientos capilares</h3>
+            <h3>150<span class="text-primary">$</span></h3>
+            <button class="font-black">
+              <img
+                src="../img/iconos/211614_down_b_arrow_icon.svg"
+                class="fill-primary w-8 h-8"
+                alt=""
+              />
+            </button>
+          </div>
+
+          <div class="panel p-4">
+            <p>
+              Tratamientos específicos para mejorar la salud del cabello, como
+              hidratación profunda, reconstrucción capilar, keratina, entre
+              otros.
+            </p>
+          </div>
+        </div>
+        <div class="bg-secondary p-4">
+          <div class="accordion flex flex-row items-center justify-between">
+            <h3 class="max-w-[80px]">Eventos especiales</h3>
+            <h3>100<span class="text-primary">$</span></h3>
+            <button class="font-black">
+              <img
+                src="../img/iconos/211614_down_b_arrow_icon.svg"
+                class="fill-primary w-8 h-8"
+                alt=""
+              />
+            </button>
+          </div>
+
+          <div class="panel p-4">
+            <p>
+              Peinados elaborados para bodas, fiestas u ocasiones especiales.
+            </p>
+          </div>
+        </div>
+        <div class="bg-secondary p-4">
+          <div class="accordion flex flex-row items-center justify-between">
+            <h3 class="max-w-[80px]">Manicura y pedicura</h3>
+            <h3>40<span class="text-primary">$</span></h3>
+            <button class="font-black">
+              <img
+                src="../img/iconos/211614_down_b_arrow_icon.svg"
+                class="fill-primary w-8 h-8"
+                alt=""
+              />
+            </button>
+          </div>
+
+          <div class="panel p-4">
+            <p>
+              Cuidado de manos y pies que incluye limpieza, recorte de uñas,
+              esmaltado y cuidado de cutículas.
+            </p>
+          </div>
+        </div>
+        <div class="bg-secondary p-4">
+          <div class="accordion flex flex-row items-center justify-between">
+            <h3 class="max-w-[80px]">Spa capilar</h3>
+            <h3>80<span class="text-primary">$</span></h3>
+            <button class="font-black">
+              <img
+                src="../img/iconos/211614_down_b_arrow_icon.svg"
+                class="fill-primary w-8 h-8"
+                alt=""
+              />
+            </button>
+          </div>
+
+          <div class="panel p-4">
+            <p>
+              Experiencias relajantes que incluyen masajes en el cuero
+              cabelludo, aromaterapia y cuidado profundo del cabello.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="w-full mt-10 bg-secondary text-text flex flex-col flex-wrap gap-y-6 content-center justify-between align-center"
+    >
+      <!-- contactame -->
+      <div class="w-10/12">
+        <h3 class="text-3xl text-text font-heading text-center my-4">
+          Contactanos!
+        </h3>
+        <div class="flex flex-col gap-4 mb-4">
+          <input
+            type="text"
+            placeholder="yourmail@gmail.com"
+            name=""
+            id=""
+            class="bg-inputs px-4 py-2"
+          />
+          <textarea
+            id=""
+            name=""
+            placeholder="your message..."
+            rows="4"
+            cols="20"
+            class="bg-inputs px-4 py-2 resize-none"
+          ></textarea>
+        </div>
+        <div class="w-full flex flex-row content-end">
+          <button class="bg-primary text-background ml-auto px-4 py-2">
+            Enviar
+          </button>
+        </div>
+      </div>
+      <img
+        src="../img/Estilo y Pasión-logos_white.png"
+        alt=""
+        class="w-10/12 max-w-xs mx-auto"
+      />
+      <!-- links -->
+      <div
+        class="w-10/12 gap-6 mb-10 flex flex-row flex-wrap content-center justify-around align-center"
+      >
+        <a href="./index.html" class="text-primary underline">Home</a>
+        <a href="./servicios.html" class="text-primary underline">Servicios</a>
+        <a href="./nosotros.html" class="text-primary underline">Nosotros</a>
+        <a href="./turnos.html" class="text-primary underline">Turnos</a>
+        <a href="./contacto.html" class="text-primary underline">Tienda</a>
+      </div>
+    </footer>
+  </body>
+  <script>
+    var accordElement = document.getElementsByClassName("accordion");
+
+    for (i = 0; i < accordElement.length; i++) {
+      accordElement[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+
+        var btn = this.lastChild.previousSibling;
+        var text = this.firstChild.nextElementSibling;
+
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+          btn.style.transform = "rotate(0deg)";
+          text.style.color = "#FEF9EC";
+        } else {
+          panel.style.display = "block";
+          btn.style.transform = "rotate(180deg)";
+          text.style.color = "#DDB400";
+        }
+      });
+    }
+  </script>
+  <script src="./navbar-btn.js"></script>
+</html>
