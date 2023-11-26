@@ -25,9 +25,9 @@
   <body class="bg-background">
     <!--  nav -->
     <nav
-      class="w-full bg-secondary sticky top-0 text-text flex flex-row flex-wrap content-center justify-between align-center h-16 pr-4"
+      class="w-full bg-secondary sticky top-0 text-text flex flex-row flex-wrap content-center justify-between align-center h-16 px-2"
     >
-      <div class="w-44 h-fit align-center logo">
+      <div class="w-44 md:w-56 h-fit align-center logo">
         <img src="./img/Estilo y Pasión-logos_white.png" alt="" class="" />
       </div>
       <button class="btn md:hidden">
@@ -37,6 +37,16 @@
           class="fill-primary w-8 h-8"
         />
       </button>
+      <ul
+        class="nav-links hidden md:flex md:flex-row md:flex-wrap md:content-center justify-around text-center w-1/2 text-text font-body text-lg"
+      >
+        <li><a href="#" class="text-primary">Home</a></li>
+        <li><a href="#">Cortes</a></li>
+        <li><a href="#">Precios</a></li>
+        <li><a href="#">Tienda</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Turnos</a></li>
+      </ul>
     </nav>
 
     <nav
@@ -95,12 +105,12 @@
       </ul>
     </nav>
 
-    <h1 class="text-4xl text-primary font-heading text-center pt-4">
+    <h1 class="text-6xl text-primary mb-12 font-heading text-center pt-4">
       Te damos la bienvenida!
     </h1>
     <!-- hero -->
     <div
-      class="bg-hero h-96 w-72 bg-center bg-no-repeat bg-cover mt-4 mx-auto align-bottom flex flex-col content-center justify-end"
+      class="bg-hero h-96 w-72 md:hidden bg-center bg-no-repeat bg-cover mt-4 mx-auto align-bottom flex flex-col content-center justify-end"
     >
       <div class="w-full px-4 mx-auto text-text font-body bg-[#262523]/80">
         <p class="text-lg">
@@ -109,90 +119,119 @@
         </p>
       </div>
     </div>
+    <div
+      class="hidden md:flex flex-row justify-center flex-wrap content-center w-fit h-fit text-center align-center mx-auto"
+    >
+      <div class="w-1/3 h-fit text-text font-body p-6 my-auto bg-secondary">
+        <p class="mb-4 text-2xl leading-loose">
+          “Descubre la perfección en cada peinado: tu refugio en el mundo de la
+          belleza.”
+        </p>
+        <div class="flex flex-row gap-4 justify-center">
+          <button class="bg-background text-text px-2 py-2">Turnos</button>
+          <button class="bg-primary text-background px-2 py-2">
+            Conoce Mas
+          </button>
+        </div>
+      </div>
+      <img
+        src="./img/cortes/woman_blonde_with_new_hair_sty (2).jpeg"
+        class="w-60"
+        alt=""
+      />
+    </div>
     <!-- Cortes section -->
     <section
-      class="bg-secondary w-72 pb-4 mt-20 mx-auto align-bottom flex flex-col content-center justify-end"
+      class="bg-secondary w-72 md:w-3/5 pb-4 mt-20 mx-auto align-bottom flex flex-col content-center justify-end"
     >
       <h2 class="text-text text-4xl font-heading text-center my-4">
         Cortes de temporada
       </h2>
       <div
-        class="w-full px-4 flex flex-col content-center justify-between gap-4"
+        class="w-full px-4 flex flex-col md:flex-row md:flex-wrap content-center justify-between md:justify-around gap-4 md:gap-2 md:gap-y-4"
       >
         <img
           src="./img/cortes/new_hair_style_soft_focus_dept.jpeg"
           alt=""
-          class="w-full"
+          class="w-full md:w-1/3"
         />
         <img
           src="./img/cortes/new_hair_style_sharp_focus_dep.jpeg"
           alt=""
-          class="w-full"
+          class="w-full md:w-1/3"
         />
         <img
           src="./img/cortes/new_hair_style_men_sharp_focus.jpeg"
           alt=""
-          class="w-full"
+          class="w-full md:w-1/3"
         />
         <img
           src="./img/cortes/new_hair_style_men_sharp_focus (1).jpeg"
           alt=""
-          class="w-full"
+          class="w-full md:w-1/3"
         />
       </div>
-      <a href="#" class="text-primary text-end font-body mr-4 mt-4 underline"
+      <a
+        href="#"
+        class="text-primary text-end font-body mr-4 md:w-[90%] mt-4 underline"
         >Ver mas -></a
       >
     </section>
     <!-- Productos section -->
     <section
-      class="bg-secondary w-72 mt-20 mx-auto align-bottom flex flex-col content-center justify-end pb-4"
+      class="bg-secondary w-72 md:w-3/5 mt-20 mx-auto align-bottom flex flex-col content-center justify-end pb-4"
     >
       <h2 class="text-text text-4xl font-heading text-center my-4">
         Nuestros productos
       </h2>
       <div
-        class="w-full px-4 flex flex-col content-center justify-between gap-4"
+        class="w-full px-4 flex flex-col md:flex md:flex-row md:flex-wrap content-center justify-between md:justify-around gap-4 md:gap-2 md:gap-y-4"
       >
         <img
           src="./img/cortes/hair_product_shampoo_object_sh.jpeg"
           alt=""
-          class="w-full"
+          class="w-full md:w-1/3"
         />
         <img
           src="./img/cortes/hair_product_shampoo_object_sh.webp"
           alt=""
-          class="w-full"
+          class="w-full md:w-1/3"
         />
         <img
           src="./img/cortes/hair_product_shampoo_object_so (1).jpeg"
           alt=""
-          class="w-full"
+          class="w-full md:w-1/3"
         />
         <img
           src="./img/cortes/hair_product_shampoo_object_so.jpeg"
           alt=""
-          class="w-full"
+          class="w-full md:w-1/3"
         />
       </div>
-      <a href="#" class="text-primary text-end font-body mr-4 mt-4 underline"
+      <a
+        href="#"
+        class="text-primary text-end font-body mr-4 md:w-[90%] mt-4 underline"
         >Ver mas -></a
       >
     </section>
     <!-- Servicios section -->
     <section
-      class="w-72 mt-20 mx-auto align-bottom flex flex-col content-center justify-end pb-4"
+      class="w-72 md:w-full mt-20 mx-auto align-bottom flex flex-col content-center justify-end pb-4"
     >
       <h2 class="text-text text-4xl font-heading text-center my-4">
         Ofrecemos servicios
       </h2>
-      <div class="w-full flex flex-col content-center justify-between gap-y-4">
+      <div
+        class="w-full flex flex-col md:flex md:flex-row md:gap-x-10 md:px-20 mx-auto content-center justify-between gap-y-4"
+      >
         <div
-          class="w-11/12 p-4 bg-secondary mx-auto text-text font-body flex flex-col content-center text-center justify-between gap-4"
+          class="w-11/12 md:h-96 md:my-auto p-4 bg-secondary mx-auto text-text font-body flex md:justify-around flex-col content-center text-center justify-between gap-4"
         >
           <h3 class="text-3xl">Tintado de cabello</h3>
-          <h4 class="text-2xl mb-4">$200</h4>
-          <div class="flex flex-col gap-2 items-center justify-center mb-4">
+          <h4 class="text-2xl mb-4 md:mb-2">$200</h4>
+          <div
+            class="flex flex-col gap-2 items-center justify-center mb-4 md:mb-2"
+          >
             <div class="flex gap-2 items-center justify-center">
               <img
                 src="./img/iconos/326572_check_icon.svg"
@@ -265,7 +304,7 @@
           </div>
         </div>
         <div
-          class="w-11/12 p-4 bg-secondary mx-auto text-text font-body flex flex-col content-center text-center justify-between gap-4"
+          class="w-11/12 md:h-96 md:my-auto p-4 bg-secondary mx-auto text-text font-body flex flex-col content-center text-center justify-between gap-4"
         >
           <h3 class="text-3xl">Tintado de cabello</h3>
           <h4 class="text-2xl mb-4">$200</h4>
@@ -306,10 +345,10 @@
     </section>
     <!-- footer -->
     <footer
-      class="w-full mt-10 bg-secondary text-text flex flex-col flex-wrap gap-y-6 content-center justify-between align-center"
+      class="w-full mt-10 bg-secondary text-text flex flex-col md:gap-x-6 md:px-10 md:flex md:flex-row-reverse md:p-4 md:flex-nowrap flex-wrap gap-y-6 content-center justify-between align-center"
     >
       <!-- contactame -->
-      <div class="w-10/12">
+      <div class="w-10/12 md:w-1/3">
         <h3 class="text-3xl text-text font-heading text-center my-4">
           Contactanos!
         </h3>
@@ -336,14 +375,17 @@
           </button>
         </div>
       </div>
-      <img
-        src="./img/Estilo y Pasión-logos_white.png"
-        alt=""
-        class="w-10/12 max-w-xs mx-auto"
-      />
+      <div class="w-10/12 md:w-1/3 my-auto">
+        <img
+          src="./img/Estilo y Pasión-logos_white.png"
+          alt=""
+          class="w-fullmd:h-auto max-w-xs mx-auto"
+        />
+      </div>
+
       <!-- links -->
       <div
-        class="w-10/12 gap-6 mb-10 flex flex-row flex-wrap content-center justify-around align-center"
+        class="w-10/12 md:w-1/3 gap-6 mb-10 flex flex-row md:flex-col md:text-center md:flex-nowrap flex-wrap content-center justify-around align-center"
       >
         <a href="./index.html" class="text-primary underline">Home</a>
         <a href="./servicios.html" class="text-primary underline">Servicios</a>
