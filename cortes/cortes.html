@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../tailwind.config.js"></script>
+    <!-- font Dancing Script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font Laila  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Laila:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+</head>
+<body class="bg-background">
+
+   <!--  nav -->
+   <nav
+   class="w-full bg-secondary sticky top-0 text-text flex flex-row flex-wrap content-center justify-between align-center h-16 pr-4"
+ >
+   <div class="w-44 h-fit align-center logo">
+     <img src="../img/Estilo y Pasión-logos_white.png" alt="" class="" />
+   </div>
+   <button class="btn md:hidden">
+     <img
+       src="../img/iconos/298879_bars_three_icon.svg"
+       alt=""
+       class="fill-primary w-8 h-8"
+     />
+   </button>
+ </nav>
+
+ <nav
+   class="mobile-menu hidden text-text md:hidden flex flex-col content-center justify-between align-center fixed top-18 left-0 w-full h-[90vh] bg-secondary py-10"
+ >
+   <ul
+     class="flex flex-col flex-wrap text-center font-body justify-between w-full h-full"
+   >
+     <li class="flex gap-2 items-center justify-center">
+       <img
+         src="../img/iconos/326656_home_icon.svg"
+         class="fill-primary w-8 h-8"
+         alt=""
+       /><a href="../index.html" class="w-[70px]">Home</a>
+     </li>
+     <li class="flex gap-2 items-center justify-center">
+       <img
+         src="../img/iconos/3669368_content_cut_ic_icon (1).svg"
+         alt=""
+         class="fill-primary w-8 h-8"
+       />
+       <a href="cortes/cortes.html" class="text-primary w-[70px]">Cortes</a>
+     </li>
+     <li class="flex gap-2 items-center justify-center">
+       <img
+         src="../img/iconos/1737376_dollar_money_sign_icon.svg"
+         alt=""
+         class="fill-primary w-8 h-8"
+       />
+       <a href="#" class="w-[70px]">Precios</a>
+     </li>
+     <li class="flex gap-2 items-center justify-center">
+       <img
+         src="../img/iconos/2205215_bag_paper_shopping_store_icon.svg"
+         alt=""
+         class="fill-primary w-8 h-8"
+       />
+       <a href="#" class="w-[70px]">Tienda</a>
+     </li>
+     <li class="flex gap-2 items-center justify-center">
+       <img
+         src="../img/iconos/309041_users_group_people_icon.svg"
+         alt=""
+         class="fill-primary w-8 h-8"
+       />
+       <a href="#" class="w-[70px]">Nosotros</a>
+     </li>
+     <li class="flex gap-2 items-center justify-center">
+       <img
+         src="../img/iconos/8664792_calendar_check_schedule_icon.svg"
+         alt=""
+         class="fill-primary w-8 h-8"
+       />
+       <a href="#" class="w-[70px]">Turnos</a>
+     </li>
+   </ul>
+ </nav>
+      <!-- cortes temporada -->
+    <h1 class="text-4xl text-primary font-heading text-center pt-4">
+      Cortes!
+    </h1>
+
+
+    <section class="mx-auto w-72 px-4">
+
+      <h2 class="text-text text-4xl font-heading text-center my-4">
+        Peinados de la temporada
+      </h2>
+    
+    <div class="flex">
+      <div>
+        <img class="pr-4 pb-4" src="./img/corteGaleria.png" alt="">
+        <img class="pr-4 pb-4" src="./img/corteGaleria3.png" alt="">
+        <img class="pr-4 pb-4" src="./img/corteGaleria4.png" alt="">
+      </div>
+      <div>
+        <img class="pr-4 pb-4" src="./img/corteGaleria2.png" alt="">
+        <img class="pr-4 pb-4" src="./img/corteGaleria5.png" alt="">
+      </div>
+    </div>
+
+
+
+    </section>
+      <!--cortes femeninos  -->
+    <section class="bg-secondary mt-28 mb-28 m-4 rounded ">
+      <h2 class="text-text text-4xl font-heading text-center my-4">
+        Peinados Femeninos
+      </h2>
+
+      <div class="w-72  mx-auto flex">
+        <div class="">
+          <img class="pr-4 pb-4" src="./img/femenino.png" alt="">
+          <img class="pr-4 pb-4" src="./img/femenino1.png" alt="">
+        </div>
+        <div>
+          <img class="pr-4 pb-4" src="./img/femenino2.png" alt="">
+          <img class="pr-4 pb-4" src="./img/femenino3.png" alt="">
+          <img class="pr-4 pb-4" src="./img/corteGaleria4.png" alt="">
+        </div>
+      </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer
+      class="w-full mt-10 bg-secondary text-text flex flex-col flex-wrap gap-y-6 content-center justify-between align-center"
+    >
+      <!-- contactame -->
+      <div class="w-10/12">
+        <h3 class="text-3xl text-text font-heading text-center my-4">
+          Contactanos!
+        </h3>
+        <div class="flex flex-col gap-4 mb-4">
+          <input
+            type="text"
+            placeholder="yourmail@gmail.com"
+            name=""
+            id=""
+            class="bg-inputs px-4 py-2"
+          />
+          <textarea
+            id=""
+            name=""
+            placeholder="your message..."
+            rows="4"
+            cols="20"
+            class="bg-inputs px-4 py-2 resize-none"
+          ></textarea>
+        </div>
+        <div class="w-full flex flex-row content-end">
+          <button class="bg-primary text-background ml-auto px-4 py-2">
+            Enviar
+          </button>
+        </div>
+      </div>
+      <img
+        src="./img/Estilo y Pasión-logos_white.png"
+        alt=""
+        class="w-10/12 max-w-xs mx-auto"
+      />
+      <!-- links -->
+      <div
+        class="w-10/12 gap-6 mb-10 flex flex-row flex-wrap content-center justify-around align-center"
+      >
+        <a href="./index.html" class="text-primary underline">Home</a>
+        <a href="./servicios.html" class="text-primary underline">Servicios</a>
+        <a href="./nosotros.html" class="text-primary underline">Nosotros</a>
+        <a href="./turnos.html" class="text-primary underline">Turnos</a>
+        <a href="./contacto.html" class="text-primary underline">Tienda</a>
+      </div>
+    </footer>
+
+</body>
+
+<script src="../navbar-btn.js"></script>
+</html>
