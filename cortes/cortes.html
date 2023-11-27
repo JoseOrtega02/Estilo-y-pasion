@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -21,133 +21,230 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./index.css" />
-</head>
-<body class="bg-background">
+  </head>
+  <body class="bg-background">
+    <!--  nav -->
+    <nav
+      class="w-full bg-secondary z-10 sticky top-0 text-text flex flex-row flex-wrap content-center justify-between align-center h-16 px-2"
+    >
+      <div class="w-44 md:w-56 h-fit align-center logo">
+        <img src="../img/Estilo y Pasión-logos_white.png" alt="" class="" />
+      </div>
+      <button class="btn md:hidden">
+        <img
+          src="../img/iconos/298879_bars_three_icon.svg"
+          alt=""
+          class="fill-primary w-8 h-8"
+        />
+      </button>
+      <ul
+        class="nav-links hidden md:flex md:flex-row md:flex-wrap md:content-center justify-around text-center w-1/2 text-text font-body text-lg"
+      >
+        <li><a href="../index.html" class="">Home</a></li>
+        <li><a href="../Cortes/cortes.html" class="text-primary">Cortes</a></li>
+        <li><a href="../Precios/Precios.html">Servicios</a></li>
+        <li><a href="../Tienda/Tienda .html">Tienda</a></li>
+        <li>
+          <a href="../Nosotros/Nosotros.html">Nosotros</a>
+        </li>
+      </ul>
+    </nav>
 
-   <!--  nav -->
-   <nav
-   class="w-full bg-secondary sticky top-0 text-text flex flex-row flex-wrap content-center justify-between align-center h-16 pr-4"
- >
-   <div class="w-44 h-fit align-center logo">
-     <img src="../img/Estilo y Pasión-logos_white.png" alt="" class="" />
-   </div>
-   <button class="btn md:hidden">
-     <img
-       src="../img/iconos/298879_bars_three_icon.svg"
-       alt=""
-       class="fill-primary w-8 h-8"
-     />
-   </button>
- </nav>
+    <nav
+      class="mobile-menu hidden text-text md:hidden flex flex-col content-center justify-between align-center fixed top-18 left-0 w-full h-[90vh] bg-secondary py-10"
+    >
+      <ul
+        class="flex flex-col flex-wrap text-center font-body justify-between w-full h-full"
+      >
+        <li class="flex gap-2 items-center justify-center">
+          <img
+            src="../img/iconos/326656_home_icon.svg"
+            class="fill-primary w-8 h-8"
+            alt=""
+          /><a href="../index.html" class="w-[70px]">Home</a>
+        </li>
+        <li class="flex gap-2 items-center justify-center">
+          <img
+            src="../img/iconos/3669368_content_cut_ic_icon (1).svg"
+            alt=""
+            class="fill-primary w-8 h-8"
+          />
+          <a href="../Cortes/cortes.html" class="text-primary w-[70px]"
+            >Cortes</a
+          >
+        </li>
+        <li class="flex gap-2 items-center justify-center">
+          <img
+            src="../img/iconos/1737376_dollar_money_sign_icon.svg"
+            alt=""
+            class="fill-primary w-8 h-8"
+          />
+          <a href="../Precios/Precios.html" class="w-[70px]">Servicios</a>
+        </li>
+        <li class="flex gap-2 items-center justify-center">
+          <img
+            src="../img/iconos/2205215_bag_paper_shopping_store_icon.svg"
+            alt=""
+            class="fill-primary w-8 h-8"
+          />
+          <a href="../Tienda/Tienda .html" class="w-[70px]">Tienda</a>
+        </li>
+        <li class="flex gap-2 items-center justify-center">
+          <img
+            src="../img/iconos/309041_users_group_people_icon.svg"
+            alt=""
+            class="fill-primary w-8 h-8"
+          />
+          <a href="../Nosotros/Nosotros.html" class="w-[70px]">Nosotros</a>
+        </li>
+        <li class="flex gap-2 items-center justify-center">
+          <img
+            src="../img/iconos/8664792_calendar_check_schedule_icon.svg"
+            alt=""
+            class="fill-primary w-8 h-8"
+          />
+          <a href="#" class="w-[70px]">Turnos</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- cortes temporada -->
+    <h1 class="text-4xl text-primary font-heading text-center pt-4">Cortes!</h1>
 
- <nav
-   class="mobile-menu hidden text-text md:hidden flex flex-col content-center justify-between align-center fixed top-18 left-0 w-full h-[90vh] bg-secondary py-10"
- >
-   <ul
-     class="flex flex-col flex-wrap text-center font-body justify-between w-full h-full"
-   >
-     <li class="flex gap-2 items-center justify-center">
-       <img
-         src="../img/iconos/326656_home_icon.svg"
-         class="fill-primary w-8 h-8"
-         alt=""
-       /><a href="../index.html" class="w-[70px]">Home</a>
-     </li>
-     <li class="flex gap-2 items-center justify-center">
-       <img
-         src="../img/iconos/3669368_content_cut_ic_icon (1).svg"
-         alt=""
-         class="fill-primary w-8 h-8"
-       />
-       <a href="cortes/cortes.html" class="text-primary w-[70px]">Cortes</a>
-     </li>
-     <li class="flex gap-2 items-center justify-center">
-       <img
-         src="../img/iconos/1737376_dollar_money_sign_icon.svg"
-         alt=""
-         class="fill-primary w-8 h-8"
-       />
-       <a href="#" class="w-[70px]">Precios</a>
-     </li>
-     <li class="flex gap-2 items-center justify-center">
-       <img
-         src="../img/iconos/2205215_bag_paper_shopping_store_icon.svg"
-         alt=""
-         class="fill-primary w-8 h-8"
-       />
-       <a href="#" class="w-[70px]">Tienda</a>
-     </li>
-     <li class="flex gap-2 items-center justify-center">
-       <img
-         src="../img/iconos/309041_users_group_people_icon.svg"
-         alt=""
-         class="fill-primary w-8 h-8"
-       />
-       <a href="#" class="w-[70px]">Nosotros</a>
-     </li>
-     <li class="flex gap-2 items-center justify-center">
-       <img
-         src="../img/iconos/8664792_calendar_check_schedule_icon.svg"
-         alt=""
-         class="fill-primary w-8 h-8"
-       />
-       <a href="#" class="w-[70px]">Turnos</a>
-     </li>
-   </ul>
- </nav>
-      <!-- cortes temporada -->
-    <h1 class="text-4xl text-primary font-heading text-center pt-4">
-      Cortes!
-    </h1>
-
-
-    <section class="mx-auto w-72 px-4">
-
+    <section class="mx-auto w-72 md:w-1/2 px-4">
       <h2 class="text-text text-4xl font-heading text-center my-4">
         Peinados de la temporada
       </h2>
-    
-    <div class="flex">
-      <div>
-        <img class="pr-4 pb-4" src="./img/corteGaleria.png" alt="">
-        <img class="pr-4 pb-4" src="./img/corteGaleria3.png" alt="">
-        <img class="pr-4 pb-4" src="./img/corteGaleria4.png" alt="">
+
+      <div class="flex">
+        <div>
+          <img
+            class="pr-4 pb-4 hover:cursor-pointer"
+            src="./img/corteGaleria1.png"
+            onclick="onClick(this)"
+            alt=""
+          />
+          <img
+            class="pr-4 pb-4 hover:cursor-pointer"
+            src="./img/corteGaleria3.png"
+            onclick="onClick(this)"
+            alt=""
+          />
+          <img
+            class="pr-4 pb-4 hover:cursor-pointer"
+            src="./img/corteGaleria4.png"
+            onclick="onClick(this)"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="pr-4 pb-4 hover:cursor-pointer"
+            src="./img/corteGaleria2.png"
+            onclick="onClick(this)"
+            alt=""
+          />
+          <img
+            class="pr-4 pb-4 hover:cursor-pointer"
+            src="./img/corteGaleria5.png"
+            onclick="onClick(this)"
+            alt=""
+          />
+        </div>
       </div>
-      <div>
-        <img class="pr-4 pb-4" src="./img/corteGaleria2.png" alt="">
-        <img class="pr-4 pb-4" src="./img/corteGaleria5.png" alt="">
-      </div>
-    </div>
-
-
-
     </section>
-      <!--cortes femeninos  -->
-    <section class="bg-secondary mt-28 mb-28 m-4 rounded ">
+    <!--cortes femeninos  -->
+    <section class="bg-secondary mt-28 mb-28 m-4 rounded">
       <h2 class="text-text text-4xl font-heading text-center my-4">
         Peinados Femeninos
       </h2>
 
-      <div class="w-72  mx-auto flex">
+      <div class="w-72 md:w-1/2 mx-auto flex">
         <div class="">
-          <img class="pr-4 pb-4" src="./img/femenino.png" alt="">
-          <img class="pr-4 pb-4" src="./img/femenino1.png" alt="">
+          <img
+            class="pr-4 pb-4 hover:cursor-pointer"
+            src="./img/femenino.png"
+            onclick="onClick(this)"
+            alt=""
+          />
+          <img
+            class="pr-4 pb-4 hover:cursor-pointer"
+            src="./img/femenino1.png"
+            onclick="onClick(this)"
+            alt=""
+          />
         </div>
         <div>
-          <img class="pr-4 pb-4" src="./img/femenino2.png" alt="">
-          <img class="pr-4 pb-4" src="./img/femenino3.png" alt="">
-          <img class="pr-4 pb-4" src="./img/corteGaleria4.png" alt="">
+          <img
+            class="pr-4 pb-4 hover:cursor-pointer"
+            src="./img/femenino2.png"
+            onclick="onClick(this)"
+            alt=""
+          />
+          <img
+            class="pr-4 pb-4 hover:cursor-pointer"
+            src="./img/femenino3.png"
+            onclick="onClick(this)"
+            alt=""
+          />
+          <img
+            class="pr-4 pb-4 hover:cursor-pointer"
+            src="./img/corteGaleria4.png"
+            onclick="onClick(this)"
+            alt=""
+          />
         </div>
       </div>
-
     </section>
+
+    <!-- modal -->
+    <div id="modal01" class="modal" onclick="this.style.display='none'">
+      <span class="close"
+        ><img
+          src="../img/iconos/9110796_x_icon.svg"
+          alt=""
+          class="fill-primary w-8 h-8"
+      /></span>
+      <div class="modal-content">
+        <img id="img01" style="max-width: 100%" />
+      </div>
+    </div>
+    <style>
+      .modal {
+        z-index: 1;
+        display: none;
+        padding-top: 10px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .modal-content {
+        margin: auto;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .close {
+        text-decoration: none;
+        float: right;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    </style>
 
     <!-- footer -->
     <footer
-      class="w-full mt-10 bg-secondary text-text flex flex-col flex-wrap gap-y-6 content-center justify-between align-center"
+      class="w-full mt-10 bg-secondary text-text flex flex-col md:gap-x-6 md:px-10 md:flex md:flex-row-reverse md:p-4 md:flex-nowrap flex-wrap gap-y-6 content-center justify-between align-center"
     >
       <!-- contactame -->
-      <div class="w-10/12">
+      <div class="w-10/12 md:w-1/3">
         <h3 class="text-3xl text-text font-heading text-center my-4">
           Contactanos!
         </h3>
@@ -174,24 +271,35 @@
           </button>
         </div>
       </div>
-      <img
-        src="./img/Estilo y Pasión-logos_white.png"
-        alt=""
-        class="w-10/12 max-w-xs mx-auto"
-      />
+      <div class="w-10/12 md:w-1/3 my-auto">
+        <img
+          src="../img/Estilo y Pasión-logos_white.png"
+          alt=""
+          class="w-full md:h-auto max-w-xs mx-auto"
+        />
+      </div>
+
       <!-- links -->
       <div
-        class="w-10/12 gap-6 mb-10 flex flex-row flex-wrap content-center justify-around align-center"
+        class="w-10/12 md:w-1/3 gap-6 mb-10 flex flex-row md:flex-col md:text-center md:flex-nowrap flex-wrap content-center justify-around align-center"
       >
-        <a href="./index.html" class="text-primary underline">Home</a>
-        <a href="./servicios.html" class="text-primary underline">Servicios</a>
-        <a href="./nosotros.html" class="text-primary underline">Nosotros</a>
+        <a href="../index.html" class="text-primary underline">Home</a>
+        <a href="../Precios/Precios.html" class="text-primary underline"
+          >Servicios</a
+        >
+        <a href="../Nosotros/Nosotros.html" class="text-primary underline"
+          >Nosotros</a
+        >
         <a href="./turnos.html" class="text-primary underline">Turnos</a>
-        <a href="./contacto.html" class="text-primary underline">Tienda</a>
+        <a href="./Tienda .html" class="text-primary underline">Tienda</a>
       </div>
     </footer>
-
-</body>
-
-<script src="../navbar-btn.js"></script>
+  </body>
+  <script>
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+    }
+  </script>
+  <script src="./navbar-btn.js"></script>
 </html>

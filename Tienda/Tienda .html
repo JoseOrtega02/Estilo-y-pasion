@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tienda</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../tailwind.config.js"></script>
     <!-- font Dancing Script -->
@@ -20,7 +20,12 @@
       href="https://fonts.googleapis.com/css2?family=Laila:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-background">
     <!--  nav -->
@@ -40,12 +45,12 @@
       <ul
         class="nav-links hidden md:flex md:flex-row md:flex-wrap md:content-center justify-around text-center w-1/2 text-text font-body text-lg"
       >
-        <li><a href="../index.html" class="">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="../Cortes/cortes.html">Cortes</a></li>
-        <li><a href="../Precios/Precios.html">Servicios</a></li>
-        <li><a href="../Tienda/Tienda .html">Tienda</a></li>
+        <li><a href="../Precios/Precios.html">Precios</a></li>
+        <li><a href="./Tienda .html" class="text-primary">Tienda</a></li>
         <li>
-          <a href="../Nosotros/Nosotros.html" class="text-primary">Nosotros</a>
+          <a href="../Nosotros/Nosotros.html">Nosotros</a>
         </li>
       </ul>
     </nav>
@@ -69,7 +74,7 @@
             alt=""
             class="fill-primary w-8 h-8"
           />
-          <a href="../cortes/cortes.html" class="w-[70px]">Cortes</a>
+          <a href="../Cortes/cortes.html" class="w-[70px]">Cortes</a>
         </li>
         <li class="flex gap-2 items-center justify-center">
           <img
@@ -77,7 +82,7 @@
             alt=""
             class="fill-primary w-8 h-8"
           />
-          <a href="" class="w-[70px]">Precios</a>
+          <a href="../Precios/Precios.html" class="w-[70px]">Servicios</a>
         </li>
         <li class="flex gap-2 items-center justify-center">
           <img
@@ -85,7 +90,7 @@
             alt=""
             class="fill-primary w-8 h-8"
           />
-          <a href="../Tienda/Tienda .html" class="w-[70px]">Tienda</a>
+          <a href="./Tienda .html" class="w-[70px] text-primary">Tienda</a>
         </li>
         <li class="flex gap-2 items-center justify-center">
           <img
@@ -93,7 +98,7 @@
             alt=""
             class="fill-primary w-8 h-8"
           />
-          <a href="#" class="w-[70px] text-primary">Nosotros</a>
+          <a href="../Nosotros/Nosotros.html" class="w-[70px]">Nosotros</a>
         </li>
         <li class="flex gap-2 items-center justify-center">
           <img
@@ -105,47 +110,137 @@
         </li>
       </ul>
     </nav>
+    <!-- Tienda -->
+    <section class="">
+      <h1 class="text-4xl text-primary font-heading text-center pt-4">
+        Nuestra Tienda
+      </h1>
+      <!-- carrucel -->
+      <section class="product">
+        <h2
+          class="text-text text-4xl font-heading text-center my-4 product-category"
+        >
+          Productos!
+        </h2>
+        <button class="pre-btn">
+          <img
+            src="../img/iconos/211614_down_b_arrow_icon.svg"
+            class="rotate-[-90deg]"
+            alt=""
+          />
+        </button>
+        <button class="nxt-btn">
+          <img
+            src="../img/iconos/211614_down_b_arrow_icon.svg"
+            class="rotate-[270deg]"
+            alt=""
+          />
+        </button>
+        <div class="product-container">
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img
+                src="../img/productos/producto.png"
+                class="product-thumb"
+                alt=""
+              />
+            </div>
+            <div class="product-info"></div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img
+                src="../img/productos/producto1.png"
+                class="product-thumb"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img
+                src="../img/productos/producto2.png"
+                class="product-thumb"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img
+                src="../img/productos/producto3.png"
+                class="product-thumb"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img
+                src="../img/productos/producto4.png"
+                class="product-thumb"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img
+                src="../img/productos/producto5.png"
+                class="product-thumb"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img
+                src="../img/productos/producto6.png"
+                class="product-thumb"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="bg-secondary mx-auto w-72 md:w-3/5 mt-10 py-4">
+      <h2 class="text-text text-4xl font-heading text-center my-4">
+        Productos mas vendidos
+      </h2>
+      <div
+        class="flex flex-col flex-wrap md:flex-row align-center content-center justify-center"
+      >
+        <img
+          class="w-64 h-64 p-4"
+          src="../img/productos/producto3.png"
+          alt=""
+        />
+        <img
+          class="w-64 h-64 p-4"
+          src="../img/productos/producto4.png"
+          alt=""
+        />
 
-    <h1 class="text-4xl text-primary font-heading text-center pt-4">
-      Nuestra historia
-    </h1>
-    <!-- historia-->
-    <img
-      src="../img/cortes/beginning_barbershop_entrepren.jpeg"
-      class="w-56 md:w-auto mt-10 mx-auto"
-      alt=""
-    />
-    <h4
-      class="text-center text-text font-body md:text-lg w-[80%] mt-10 mx-auto"
-    >
-      En un antiguo barrio, una barbería humilde abrió sus puertas décadas
-      atrás. Con el tiempo, la demanda por servicios más variados creció,
-      desafiando su especialización inicial en cortes de cabello masculinos.
-    </h4>
-    <h4 class="text-center text-text font-body md:text-lg w-[80%] mt-6 mx-auto">
-      Este cambio generó tensiones internas. Algunos barberos resistían la
-      transición hacia un salón de belleza por temor a perder la esencia
-      original del oficio.
-    </h4>
-    <img
-      src="../img/cortes/google_maps_ubication_of_a_bus.jpeg"
-      class="w-56 md:w-auto mt-10 mx-auto"
-      alt=""
-    />
-    <h4 class="text-center text-text font-body md:text-lg w-[80%] mt-6 mx-auto">
-      Tras debates y acuerdos, la barbería evolucionó hacia un dinámico salón de
-      belleza. La fusión entre cortes clásicos y tratamientos modernos
-      fortaleció al equipo y atrajo a una clientela diversa. La historia se
-      transformó en una unión entre tradición e innovación.
-    </h4>
-    <h2 class="text-center text-text font-heading text-3xl mt-10">
-      Puedes encontrarnos en:
-    </h2>
-    <img
-      src="../img/cortes/Captura.PNG"
-      class="w-full max-w-[500px] md:max-w-[1000px] mt-10 mx-auto"
-      alt=""
-    />
+        <img
+          class="w-64 h-64 p-4"
+          src="../img/productos/producto5.png"
+          alt=""
+        />
+        <img
+          class="w-64 h-64 p-4"
+          src="../img/productos/producto6.png"
+          alt=""
+        />
+      </div>
+    </section>
     <footer
       class="w-full mt-10 bg-secondary text-text flex flex-col md:gap-x-6 md:px-10 md:flex md:flex-row-reverse md:p-4 md:flex-nowrap flex-wrap gap-y-6 content-center justify-between align-center"
     >
@@ -190,9 +285,6 @@
         class="w-10/12 md:w-1/3 gap-6 mb-10 flex flex-row md:flex-col md:text-center md:flex-nowrap flex-wrap content-center justify-around align-center"
       >
         <a href="../index.html" class="text-primary underline">Home</a>
-        <a href="../Cortes/cortes.html" class="text-primary underline"
-          >Cortes</a
-        >
         <a href="../Precios/Precios.html" class="text-primary underline"
           >Servicios</a
         >
@@ -200,11 +292,10 @@
           >Nosotros</a
         >
         <a href="./turnos.html" class="text-primary underline">Turnos</a>
-        <a href="../Tienda/Tienda .html" class="text-primary underline"
-          >Tienda</a
-        >
+        <a href="./Tienda .html" class="text-primary underline">Tienda</a>
       </div>
     </footer>
+    <script src="script.js"></script>
     <script src="./navbar-btn.js"></script>
   </body>
 </html>
