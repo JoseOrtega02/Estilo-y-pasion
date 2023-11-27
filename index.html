@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
     <!-- font Dancing Script -->
@@ -40,12 +40,11 @@
       <ul
         class="nav-links hidden md:flex md:flex-row md:flex-wrap md:content-center justify-around text-center w-1/2 text-text font-body text-lg"
       >
-        <li><a href="#" class="text-primary">Home</a></li>
+        <li><a href="./index.html" class="text-primary">Home</a></li>
         <li><a href="./cortes/cortes.html">Cortes</a></li>
-        <li><a href="#">Precios</a></li>
+        <li><a href="./Precios/Precios.html">Precios</a></li>
         <li><a href="./Tienda/Tienda .html">Tienda</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Turnos</a></li>
+        <li><a href="./Nosotros/Nosotros.html">Nosotros</a></li>
       </ul>
     </nav>
 
@@ -60,7 +59,7 @@
             src="./img/iconos/326656_home_icon.svg"
             class="fill-primary w-8 h-8"
             alt=""
-          /><a href="#" class="text-primary w-[70px]">Home</a>
+          /><a href="./index.html" class="text-primary w-[70px]">Home</a>
         </li>
         <li class="flex gap-2 items-center justify-center">
           <img
@@ -68,7 +67,7 @@
             alt=""
             class="fill-primary w-8 h-8"
           />
-          <a href="cortes/cortes.html" class="w-[70px]">Cortes</a>
+          <a href="./cortes/cortes.html" class="w-[70px]">Cortes</a>
         </li>
         <li class="flex gap-2 items-center justify-center">
           <img
@@ -76,7 +75,7 @@
             alt=""
             class="fill-primary w-8 h-8"
           />
-          <a href="#" class="w-[70px]">Precios</a>
+          <a href="./Precios/Precios.html" class="w-[70px]">Servicios</a>
         </li>
         <li class="flex gap-2 items-center justify-center">
           <img
@@ -92,7 +91,7 @@
             alt=""
             class="fill-primary w-8 h-8"
           />
-          <a href="#" class="w-[70px]">Nosotros</a>
+          <a href="./Nosotros/Nosotros.html" class="w-[70px]">Nosotros</a>
         </li>
         <li class="flex gap-2 items-center justify-center">
           <img
@@ -128,10 +127,15 @@
           belleza.”
         </p>
         <div class="flex flex-row gap-4 justify-center">
-          <button class="bg-background text-text px-2 py-2">Turnos</button>
-          <button class="bg-primary text-background px-2 py-2">
-            Conoce Mas
-          </button>
+          <a href="#">
+            <button class="bg-background text-text px-2 py-2">Turnos</button>
+          </a>
+
+          <a href="./cortes/cortes.html">
+            <button class="bg-primary text-background px-2 py-2">
+              Conoce Mas
+            </button>
+          </a>
         </div>
       </div>
       <img
@@ -142,6 +146,7 @@
     </div>
     <!-- Cortes section -->
     <section
+      id="cortes"
       class="bg-secondary w-72 md:w-3/5 pb-4 mt-20 mx-auto align-bottom flex flex-col content-center justify-end"
     >
       <h2 class="text-text text-4xl font-heading text-center my-4">
@@ -172,7 +177,7 @@
         />
       </div>
       <a
-        href="#"
+        href="./cortes/cortes.html"
         class="text-primary text-end font-body mr-4 md:w-[90%] mt-4 underline"
         >Ver mas -></a
       >
@@ -227,41 +232,47 @@
         <div
           class="w-11/12 md:h-96 md:my-auto p-4 bg-secondary mx-auto text-text font-body flex md:justify-around flex-col content-center text-center justify-between gap-4"
         >
-          <h3 class="text-3xl">Tintado de cabello</h3>
-          <h4 class="text-2xl mb-4 md:mb-2">$200</h4>
+          <h3 class="text-3xl">Corte y Peinado</h3>
+          <h4 class="text-2xl mb-4 md:mb-2">900$</h4>
           <div
-            class="flex flex-col gap-2 items-center justify-center mb-4 md:mb-2"
+            class="flex flex-col gap-2 items-align justify-center mb-4 md:mb-2"
           >
-            <div class="flex gap-2 items-center justify-center">
+            <div class="flex gap-2 items-center">
               <img
                 src="./img/iconos/326572_check_icon.svg"
                 class="fill-primary w-8 h-8"
                 alt=""
               />
-              <h5>Tintado de cabello</h5>
+              <h5 class="w-[190px]">Transformación Personalizada</h5>
             </div>
-            <div class="flex gap-2 items-center justify-center">
+            <div class="flex gap-2 items-center">
               <img
                 alt=""
                 src="./img/iconos/326572_check_icon.svg"
                 class="fill-primary w-8 h-8"
               />
-              <h5>Tintado de cabello</h5>
+              <h5 class="w-[190px]">Profesionalidad Garantizada</h5>
             </div>
-            <div class="flex gap-2 items-center justify-center">
+            <div class="flex gap-2 items-center">
               <img
                 alt=""
                 src="./img/iconos/326572_check_icon.svg"
                 class="fill-primary w-8 h-8"
               />
-              <h5>Tintado de cabello</h5>
+              <h5 class="w-[190px]">Renovación Efectiva</h5>
             </div>
           </div>
           <div class="flex flex-row gap-4 justify-center">
-            <button class="bg-background text-text px-4 py-2">Turnos</button>
-            <button class="bg-primary text-background px-4 py-2">
-              Conoce Mas
-            </button>
+            <a href="./#"
+              ><button class="bg-background text-text px-4 py-2">
+                Turnos
+              </button></a
+            >
+            <a href="./Precios/Precios.html">
+              <button class="bg-primary text-background px-4 py-2">
+                Conoce Mas
+              </button>
+            </a>
           </div>
         </div>
         <div
@@ -269,76 +280,80 @@
         >
           <p class="text-text">-Mas solicitado-</p>
           <h3 class="text-3xl text-secondary">Tintado de cabello</h3>
-          <h4 class="text-2xl mb-10 text-secondary">$200</h4>
+          <h4 class="text-2xl mb-10 text-secondary">1000$</h4>
           <div class="flex flex-col gap-2 items-center justify-center mb-10">
-            <div class="flex gap-2 items-center justify-center">
+            <div class="flex gap-2 items-center">
               <img
                 src="./img/iconos/326572_check_icon.svg"
                 class="fill-primary w-8 h-8"
                 alt=""
               />
-              <h5 class="text-secondary">Tintado de cabello</h5>
+              <h5 class="text-secondary w-[190px]">Personalización de Color</h5>
             </div>
-            <div class="flex gap-2 items-center justify-center">
+            <div class="flex gap-2 items-center">
               <img
                 alt=""
                 src="./img/iconos/326572_check_icon.svg"
                 class="fill-primary w-8 h-8"
               />
-              <h5 class="text-secondary">Tintado de cabello</h5>
+              <h5 class="text-secondary w-[190px]">Técnicas Profesionales</h5>
             </div>
-            <div class="flex gap-2 items-center justify-center">
+            <div class="flex gap-2 items-center">
               <img
                 alt=""
                 src="./img/iconos/326572_check_icon.svg"
                 class="fill-primary w-8 h-8"
               />
-              <h5 class="text-secondary">Tintado de cabello</h5>
+              <h5 class="text-secondary w-[190px]">Estilo y Atrevimiento</h5>
             </div>
           </div>
           <div class="flex flex-row gap-4 justify-center">
             <button class="bg-background text-text px-4 py-2">Turnos</button>
-            <button class="bg-primary text-background px-4 py-2">
-              Conoce Mas
-            </button>
+            <a href="./Precios/Precios.html">
+              <button class="bg-primary text-background px-4 py-2">
+                Conoce Mas
+              </button>
+            </a>
           </div>
         </div>
         <div
           class="w-11/12 md:h-96 md:my-auto p-4 bg-secondary mx-auto text-text font-body flex flex-col content-center text-center justify-between gap-4"
         >
-          <h3 class="text-3xl">Tintado de cabello</h3>
-          <h4 class="text-2xl mb-4">$200</h4>
+          <h3 class="text-3xl">Tratamiento Capilar</h3>
+          <h4 class="text-2xl mb-4">90$</h4>
           <div class="flex flex-col gap-2 items-center justify-center mb-4">
-            <div class="flex gap-2 items-center justify-center">
+            <div class="flex gap-2 items-center">
               <img
                 src="./img/iconos/326572_check_icon.svg"
                 class="fill-primary w-8 h-8"
                 alt=""
               />
-              <h5>Tintado de cabello</h5>
+              <h5 class="w-[190px]">Recuperación Intensiva</h5>
             </div>
-            <div class="flex gap-2 items-center justify-center">
+            <div class="flex gap-2 items-center">
               <img
                 alt=""
                 src="./img/iconos/326572_check_icon.svg"
                 class="fill-primary w-8 h-8"
               />
-              <h5>Tintado de cabello</h5>
+              <h5 class="w-[190px]">Nutrición Profunda</h5>
             </div>
-            <div class="flex gap-2 items-center justify-center">
+            <div class="flex gap-2 items-center">
               <img
                 alt=""
                 src="./img/iconos/326572_check_icon.svg"
                 class="fill-primary w-8 h-8"
               />
-              <h5>Tintado de cabello</h5>
+              <h5 class="w-[190px]">Cuidado Restaurador</h5>
             </div>
           </div>
           <div class="flex flex-row gap-4 justify-center">
             <button class="bg-background text-text px-4 py-2">Turnos</button>
-            <button class="bg-primary text-background px-4 py-2">
-              Conoce Mas
-            </button>
+            <a href="./Precios/Precios.html">
+              <button class="bg-primary text-background px-4 py-2">
+                Conoce Mas
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -388,8 +403,13 @@
         class="w-10/12 md:w-1/3 gap-6 mb-10 flex flex-row md:flex-col md:text-center md:flex-nowrap flex-wrap content-center justify-around align-center"
       >
         <a href="./index.html" class="text-primary underline">Home</a>
-        <a href="./servicios.html" class="text-primary underline">Servicios</a>
-        <a href="./nosotros.html" class="text-primary underline">Nosotros</a>
+        <a href="./Precios/Precios.html" class="text-primary underline"
+          >Servicios</a
+        >
+        <a href="./Nosotros/Nosotros.html" class="text-primary underline"
+          >Nosotros</a
+        >
+        <a href="./cortes/cortes.html" class="text-primary underline">Cortes</a>
         <a href="./turnos.html" class="text-primary underline">Turnos</a>
         <a href="./contacto.html" class="text-primary underline">Tienda</a>
       </div>
