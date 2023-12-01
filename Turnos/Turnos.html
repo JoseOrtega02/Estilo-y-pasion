@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Turnos</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../tailwind.config.js"></script>
     <!-- font Dancing Script -->
@@ -21,6 +21,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+
+    
+    <style>
+      .calendar{
+        width: 450px;
+        height: auto;
+      }
+      .calendar > p {
+        border: 2px solid #42413e;
+        padding: 10px;
+        margin: 0;
+      }
+    </style>
   </head>
   <body class="bg-background">
     <!--  nav -->
@@ -44,10 +57,8 @@
         <li><a href="../cortes/cortes.html">Cortes</a></li>
         <li><a href="../Precios/Precios.html">Servicios</a></li>
         <li><a href="../Tienda/Tienda.html">Tienda</a></li>
-        <li>
-          <a href="../Nosotros/Nosotros.html" class="text-primary">Nosotros</a>
-        </li>
-        <li><a href="../Turnos/Turnos.html">Turnos</a></li>
+        <li><a href="../Nosotros/Nosotros.html" >Nosotros</a></li>
+        <li><a href="./Turnos.html" class="text-primary">Turnos</a></li>
       </ul>
     </nav>
 
@@ -78,7 +89,7 @@
             alt=""
             class="fill-primary w-8 h-8"
           />
-          <a href="../Precios/Precios.html" class="w-[70px]">Servicios</a>
+          <a href="" class="w-[70px]">Precios</a>
         </li>
         <li class="flex gap-2 items-center justify-center">
           <img
@@ -102,51 +113,100 @@
             alt=""
             class="fill-primary w-8 h-8"
           />
-          <a href="../Turnos/Turnos.html" class="w-[70px]">Turnos</a>
+          <a href="#" class="w-[70px]">Turnos</a>
         </li>
       </ul>
     </nav>
 
-    <h1 class="text-4xl text-primary font-heading text-center pt-4">
-      Nuestra historia
-    </h1>
-    <!-- historia-->
-    <img
-      src="../img/cortes/beginning_barbershop_entrepren.jpeg"
-      class="w-56 md:w-auto mt-10 mx-auto"
-      alt=""
-    />
-    <h4
-      class="text-center text-text font-body md:text-lg w-[80%] mt-10 mx-auto"
-    >
-      En un antiguo barrio, una barbería humilde abrió sus puertas décadas
-      atrás. Con el tiempo, la demanda por servicios más variados creció,
-      desafiando su especialización inicial en cortes de cabello masculinos.
-    </h4>
-    <h4 class="text-center text-text font-body md:text-lg w-[80%] mt-6 mx-auto">
-      Este cambio generó tensiones internas. Algunos barberos resistían la
-      transición hacia un salón de belleza por temor a perder la esencia
-      original del oficio.
-    </h4>
-    <img
-      src="../img/cortes/google_maps_ubication_of_a_bus.jpeg"
-      class="w-56 md:w-auto mt-10 mx-auto"
-      alt=""
-    />
-    <h4 class="text-center text-text font-body md:text-lg w-[80%] mt-6 mx-auto">
-      Tras debates y acuerdos, la barbería evolucionó hacia un dinámico salón de
-      belleza. La fusión entre cortes clásicos y tratamientos modernos
-      fortaleció al equipo y atrajo a una clientela diversa. La historia se
-      transformó en una unión entre tradición e innovación.
-    </h4>
-    <h2 class="text-center text-text font-heading text-3xl mt-10">
-      Puedes encontrarnos en:
-    </h2>
-    <img
-      src="../img/cortes/Captura.PNG"
-      class="w-full max-w-[500px] md:max-w-[1000px] mt-10 mx-auto"
-      alt=""
-    />
+    <section>
+
+        <h1 class="text-4xl text-primary font-heading text-center pt-4">
+            Turnos
+        </h1>
+        <h4
+          class="text-center text-text font-body md:text-lg w-[80%] mt-10 mx-auto"
+        >
+        Una vez agendado el turno, el comprobante de seña debe ser enviado por WhatsApp al +54 9 1151319333 para que el
+         turno quede agendado de manera correcta. Cualquier duda, consulta y/o comentario sobre el turno puede ser enviado 
+         a nuestro WhatsApp
+        </h4>
+
+        <h2 class="text-text text-4xl font-heading text-center my-4">
+            Reserva tu turno!!
+        </h2>
+        <p class="text-text text-center">diciembre <span class="text-primary">2023</span></p>
+        <div
+        class="calendar grid mx-auto grid-cols-4 gap-0.5 text-center font-body text-text text-lg bg-secondary mb-10"
+      >
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+        <p>11</p>
+        <p>12</p>
+        <p>13</p>
+        <p>14</p>
+        <p>15</p>
+        <p>16</p>
+        <p>17</p>
+        <p>18</p>
+        <p>19</p>
+        <p>20</p>
+        <p>21</p>
+        <p>22</p>
+        <p>23</p>
+        <p>24</p>
+        <p>25</p>
+        <p>26</p>
+        <p>27</p>
+        <p>28</p>
+        <p>29</p>
+        <p>30</p>
+      </div>
+
+        <div class="md:w-[35%] w-72 mx-auto">
+
+            <div class="flex flex-col gap-4 mb-4">
+              <input
+              type="text"
+              placeholder="Nombre"
+              name=""
+              id=""
+              class="bg-inputs px-4 py-2"
+            />
+              <input
+                type="text"
+                placeholder="Especialidad"
+                name=""
+                id=""
+                class="bg-inputs px-4 py-2"
+              />
+              <input
+                type="number"
+                placeholder="Numero"
+                name=""
+                id=""
+                class="bg-inputs px-4 py-2"
+              />
+
+
+            </div>
+            <div class="w-full flex flex-row content-end">
+              <button class="bg-primary text-background ml-auto px-8 py-4">
+                Enviar
+              </button>
+            </div>
+          </div>
+
+
+    </section>
+
     <footer
       class="w-full mt-10 bg-secondary text-text flex flex-col md:gap-x-6 md:px-10 md:flex md:flex-row-reverse md:p-4 md:flex-nowrap flex-wrap gap-y-6 content-center justify-between align-center"
     >
@@ -191,21 +251,25 @@
         class="w-10/12 md:w-1/3 gap-6 mb-10 flex flex-row md:flex-col md:text-center md:flex-nowrap flex-wrap content-center justify-around align-center"
       >
         <a href="../index.html" class="text-primary underline">Home</a>
-        <a href="../cortes/cortes.html" class="text-primary underline"
-          >Cortes</a
-        >
-        <a href="../Precios/Precios.html" class="text-primary underline"
-          >Servicios</a
-        >
-        <a href="../Nosotros/Nosotros.html" class="text-primary underline"
-          >Nosotros</a
-        >
-        <a href="./turnos.html" class="text-primary underline">Turnos</a>
-        <a href="../Tienda/Tienda.html" class="text-primary underline"
-          >Tienda</a
-        >
+        <a href="../cortes/cortes.html" class="text-primary underline">Cortes</a>
+        <a href="../servicios.html" class="text-primary underline">Servicios</a>
+        <a href="../nosotros.html" class="text-primary underline">Nosotros</a>
+        <a href="../Tienda/Tienda.html" class="text-primary underline">Tienda</a>
+        <a href="../turnos.html" class="text-primary underline">Turnos</a>
       </div>
     </footer>
-    <script src="./navbar-btn.js"></script>
+    
+    <script src="../navbar-btn.js"></script>
+
+        <script>
+      var calendar = document.querySelector(".calendar");
+      calendar.addEventListener("click", function (e) {
+        if (e.target.tagName === "P") {
+          e.target.style.backgroundColor = "#DDB400";
+          e.target.style.color = "#141414";
+        }
+      });
+    </script>
+
   </body>
 </html>
