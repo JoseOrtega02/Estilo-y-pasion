@@ -22,10 +22,9 @@
     />
     <link rel="stylesheet" href="./style.css" />
 
-    
     <style>
-      .calendar{
-        width: 450px;
+      .calendar {
+        max-width: 450px;
         height: auto;
       }
       .calendar > p {
@@ -53,11 +52,11 @@
       <ul
         class="nav-links hidden md:flex md:flex-row md:flex-wrap md:content-center justify-around text-center w-1/2 text-text font-body text-lg"
       >
-        <li><a href="../index.html" class="">Home</a></li>
+        <li><a href="../index.html" class="">Inicio</a></li>
         <li><a href="../cortes/cortes.html">Cortes</a></li>
         <li><a href="../Precios/Precios.html">Servicios</a></li>
         <li><a href="../Tienda/Tienda.html">Tienda</a></li>
-        <li><a href="../Nosotros/Nosotros.html" >Nosotros</a></li>
+        <li><a href="../Nosotros/Nosotros.html">Nosotros</a></li>
         <li><a href="./Turnos.html" class="text-primary">Turnos</a></li>
       </ul>
     </nav>
@@ -73,7 +72,7 @@
             src="../img/iconos/326656_home_icon.svg"
             class="fill-primary w-8 h-8"
             alt=""
-          /><a href="../index.html" class="w-[70px]">Home</a>
+          /><a href="../index.html" class="w-[70px]">Inicio</a>
         </li>
         <li class="flex gap-2 items-center justify-center">
           <img
@@ -89,7 +88,7 @@
             alt=""
             class="fill-primary w-8 h-8"
           />
-          <a href="" class="w-[70px]">Precios</a>
+          <a href="../Precios/Precios.html" class="w-[70px]">Precios</a>
         </li>
         <li class="flex gap-2 items-center justify-center">
           <img
@@ -105,7 +104,7 @@
             alt=""
             class="fill-primary w-8 h-8"
           />
-          <a href="#" class="w-[70px] text-primary">Nosotros</a>
+          <a href="../Nosotros/Nosotros.html" class="w-[70px]">Nosotros</a>
         </li>
         <li class="flex gap-2 items-center justify-center">
           <img
@@ -113,30 +112,32 @@
             alt=""
             class="fill-primary w-8 h-8"
           />
-          <a href="#" class="w-[70px]">Turnos</a>
+          <a href="./Turnos.html" class="w-[70px] text-primary">Turnos</a>
         </li>
       </ul>
     </nav>
 
     <section>
+      <h1 class="text-4xl text-primary font-heading text-center pt-4">
+        Turnos
+      </h1>
+      <h4
+        class="text-center text-text font-body md:text-lg w-[80%] mt-10 mx-auto"
+      >
+        Una vez agendado el turno, el comprobante de seña debe ser enviado por
+        WhatsApp al <span class="text-primary">+54 9 1151319333</span> para que
+        el turno quede agendado de manera correcta. Cualquier duda, consulta y/o
+        comentario sobre el turno puede ser enviado a nuestro WhatsApp
+      </h4>
 
-        <h1 class="text-4xl text-primary font-heading text-center pt-4">
-            Turnos
-        </h1>
-        <h4
-          class="text-center text-text font-body md:text-lg w-[80%] mt-10 mx-auto"
-        >
-        Una vez agendado el turno, el comprobante de seña debe ser enviado por WhatsApp al +54 9 1151319333 para que el
-         turno quede agendado de manera correcta. Cualquier duda, consulta y/o comentario sobre el turno puede ser enviado 
-         a nuestro WhatsApp
-        </h4>
-
-        <h2 class="text-text text-4xl font-heading text-center my-4">
-            Reserva tu turno!!
-        </h2>
-        <p class="text-text text-center">diciembre <span class="text-primary">2023</span></p>
-        <div
-        class="calendar grid mx-auto grid-cols-4 gap-0.5 text-center font-body text-text text-lg bg-secondary mb-10"
+      <h2 class="text-text text-4xl font-heading text-center my-4">
+        Reserva tu turno!!
+      </h2>
+      <p class="text-text text-center">
+        Diciembre <span class="text-primary">2023</span>
+      </p>
+      <div
+        class="calendar w-[90%] grid mx-auto grid-cols-3 md:grid-cols-4 gap-0.5 text-center font-body text-text text-lg bg-inputs mb-10"
       >
         <p>1</p>
         <p>2</p>
@@ -170,41 +171,36 @@
         <p>30</p>
       </div>
 
-        <div class="md:w-[35%] w-72 mx-auto">
-
-            <div class="flex flex-col gap-4 mb-4">
-              <input
-              type="text"
-              placeholder="Nombre"
-              name=""
-              id=""
-              class="bg-inputs px-4 py-2"
-            />
-              <input
-                type="text"
-                placeholder="Especialidad"
-                name=""
-                id=""
-                class="bg-inputs px-4 py-2"
-              />
-              <input
-                type="number"
-                placeholder="Numero"
-                name=""
-                id=""
-                class="bg-inputs px-4 py-2"
-              />
-
-
-            </div>
-            <div class="w-full flex flex-row content-end">
-              <button class="bg-primary text-background ml-auto px-8 py-4">
-                Enviar
-              </button>
-            </div>
-          </div>
-
-
+      <div class="md:w-[35%] w-72 mx-auto">
+        <div class="flex flex-col gap-4 mb-4">
+          <input
+            type="text"
+            placeholder="Nombre"
+            name=""
+            id=""
+            class="bg-inputs px-4 py-2"
+          />
+          <input
+            type="text"
+            placeholder="Especialidad"
+            name=""
+            id=""
+            class="bg-inputs px-4 py-2"
+          />
+          <input
+            type="number"
+            placeholder="Numero"
+            name=""
+            id=""
+            class="bg-inputs px-4 py-2"
+          />
+        </div>
+        <div class="w-full flex flex-row content-end">
+          <button class="bg-primary text-background ml-auto px-8 py-4">
+            Enviar
+          </button>
+        </div>
+      </div>
     </section>
 
     <footer
@@ -250,18 +246,22 @@
       <div
         class="w-10/12 md:w-1/3 gap-6 mb-10 flex flex-row md:flex-col md:text-center md:flex-nowrap flex-wrap content-center justify-around align-center"
       >
-        <a href="../index.html" class="text-primary underline">Home</a>
-        <a href="../cortes/cortes.html" class="text-primary underline">Cortes</a>
+        <a href="../index.html" class="text-primary underline">Inicio</a>
+        <a href="../cortes/cortes.html" class="text-primary underline"
+          >Cortes</a
+        >
         <a href="../servicios.html" class="text-primary underline">Servicios</a>
         <a href="../nosotros.html" class="text-primary underline">Nosotros</a>
-        <a href="../Tienda/Tienda.html" class="text-primary underline">Tienda</a>
-        <a href="../turnos.html" class="text-primary underline">Turnos</a>
+        <a href="../Tienda/Tienda.html" class="text-primary underline"
+          >Tienda</a
+        >
+        <a href="./turnos.html" class="text-primary underline">Turnos</a>
       </div>
     </footer>
-    
+
     <script src="../navbar-btn.js"></script>
 
-        <script>
+    <script>
       var calendar = document.querySelector(".calendar");
       calendar.addEventListener("click", function (e) {
         if (e.target.tagName === "P") {
@@ -270,6 +270,5 @@
         }
       });
     </script>
-
   </body>
 </html>
