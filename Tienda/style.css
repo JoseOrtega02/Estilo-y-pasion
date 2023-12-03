@@ -84,8 +84,12 @@
 }
 
 .card-btn:hover {
-  background: #ff7d7d;
-  color: #fff;
+  background: #DDB400;
+  color: #000000;
+}
+.product-image:hover img{
+  transition: 0.5s;
+  filter: brightness(0.5)
 }
 
 .product-info {
