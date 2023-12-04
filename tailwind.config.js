@@ -14,7 +14,7 @@ tailwind.config = {
         heading: ["Dancing Script", "serif"],
       },
       backgroundImage: {
-        hero: "url('./img/cortes/woman_blonde_with_new_hair_sty (2).jpeg')",
+        hero: "url('./img/cortes/woman_blonde_with_new_hair_sty-_2_.webp')",
       },
     },
   },
